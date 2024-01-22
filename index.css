@@ -1,0 +1,82 @@
+body{
+    margin:0 50px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin-left:50px ;
+}
+
+.checkbox_tudo{
+    display: none;
+}
+
+.btn{
+    cursor: pointer;
+    display: block;
+    background-color: rgb(120, 139, 204);
+    text-align: center;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: rgb(145, 171, 255);
+}
+.codigo{
+    width: 300px;
+    background-color: rgb(41, 40, 40);
+    color:white;
+    border: none;
+    padding: 5px;
+}
+
+/* Conteudo invisivel */
+#Hs {
+    display: none;
+}
+#listas {
+    display: none;
+}
+#formulario{
+    display: none;
+}
+#button{
+    display: none;
+}
+#inputs{
+    display: none;
+}
+#ancora{
+    display: none;
+}
+
+/* Conteudo visivel */
+#titulos:checked + #Hs{
+    display: block;
+}
+#Listas:checked + #listas{
+    display: block;
+}
+#Formulario:checked + #formulario{
+    display: block;
+}
+#Button:checked + #button{
+    display: block;
+}
+#Inputs:checked + #inputs{
+    display: block;
+}
+#Ancora:checked + #ancora{
+    display: block;
+}

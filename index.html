@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="../public/wizard.ico">
+    <link rel="stylesheet" href="index.css">
+    <title>Html</title>
+    <style>
+        pre {
+          white-space: pre-wrap;
+        }
+      </style>
+</head>
+<body>
+    
+    <header title="cabecalho" style="display: flex; justify-content: center;">
+        <img id="mago" style="height: 90px;" src="../public/wizard.png" alt="wizard">
+        <h2 style="font-family: 'Lucida Sans'; margin: auto 71px;">só pra consultar as tags do html..</h2> 
+    </header>
+    <main title="principal">
+        <label for="titulos" class="btn"> Titulos</label>
+        <input type="checkbox" id="titulos" class="checkbox_tudo">
+        <div id="Hs">
+            <h1>Titulo H1</h1>
+            <h2>Titulo h2</h2>
+            <h3>Titulo h3</h3>
+            <h4>Titulo h4</h4>
+            <h5>Titulo h5</h5>
+            <h6>Titulo h6</h6>
+        </div>
+        <section>
+            
+            <h1>Principais tags</h1>
+            <label for="Listas" class="btn"> Listas</label>
+            <input type="checkbox" id="Listas" class="checkbox_tudo">
+            <div id="listas">
+                <ul title="lista não ordenada">
+                    <li>ul</li>
+                    <li>lista</li>
+                    <li>não</li>
+                    <li>ordenada</li>
+                </ul>
+                <ol title="lista ordenada">
+                    <li>ol</li>
+                    <li>lista</li>
+                    <li>ordenada</li>
+                </ol>
+            </div>
+            
+            <form>
+                <label for="Formulario" class="btn"> Formulario</label>
+                <input type="checkbox" id="Formulario" class="checkbox_tudo">
+                <div id="formulario">
+                    <h4>Formulario atributos</h4>
+                    <ul>
+                        <li><b>action:</b> Define o URL para onde os dados do formulário serão enviados quando o formulário for submetido.</li>
+                        <li><b>method:</b> Metodo HTTP que vai ser usado ao enviar o formulario (GET - POST)</li>
+                        <li><b>target:</b> Especifica o destino para onde a resposta do servidor deve ser exibida após a submissão do formulário (pode ser usada na tag de link). Pode ser 
+                            <span title="abre em outra guia" style="color:palevioletred;">"_blank"</span>, 
+                            <span title="abre na mesma guia" style="color:palevioletred;">"_self"</span> , 
+                            <span title="Abre o link ou formulário na janela pai daquela de onde foi aberto. Útil quando você está trabalhando com frames." style="color:palevioletred;">"_parent"</span> ou
+                            <span title="mesmo que parent" style="color:palevioletred;">"_top"</span>.
+                        </li>
+                    </ul>
+                </div>
+    
+                <label for="Button" class="btn"> Button</label>
+                <input type="checkbox" id="Button" class="checkbox_tudo">
+                <div id="button">
+                    <b>Input do type="button":</b>
+                    <ul>
+                        <li>não tem um comportamento padrão - frequentemente usado para implementar uma lógica javascript</li>
+                        <li>o atributo value é o que coloca o nome do button</li>
+                    </ul>
+                    <h4>Button</h4>
+                    <label for="testandoReset">Digite um texto qualquer e clique no reset</label><br>
+                    <input type="text" id="testandoReset"><br>
+                    <button type="reset" title="Ao clicar nele, todos os campos de formulário dentro do mesmo formulário serão resetados para os valores iniciais">reset</button>
+                    <button type="submit" title="valor padrao, submete o formulario">submit</button>
+                </div>
+            </form>
+            <form title="formulario">
+                <label for="Inputs" class="btn"> Inputs</label>
+                <input type="checkbox" id="Inputs" class="checkbox_tudo"> 
+                <div id="inputs">
+                    <label for="inputText">Input text</label>
+                    <input type="text" id="inputText" required/> <br title="pularParaProximaLinha">
+        
+                    <label for="inputNumber">Input number</label>
+                    <input type="number" id="inputNumber"/> <br>
+        
+                    <input type="file"/> <br>
+        
+                    <input type="date"/> <br>
+        
+                    <input type="color"/> <br>
+        
+                    <label for="inputSenha">Input senha</label>
+                    <input type="password" id="inputSenha"/> <br>
+        
+                    <label for="inputEmail">Input email</label>
+                    <input type="email" id="inputEmail"/> <br>
+        
+                    <label for="inputRange">Input range</label>
+                    <input type="range" min="0" max="100" step="5" id="inputRange" title="permitir que os usuários escolham um valor numérico dentro de um intervalo específico, representado por uma barra de deslizamento horizontal"/> <br>
+        
+                    <label for="inputPesquisa">Input pesquisa</label>
+                    <input type="search" id="inputPesquisa"/> <br>
+        
+                    <p>
+                        <input type="radio" name="" id="inputRadio" >
+                        <label for="inputRadio">Input Radio</label>
+                        <input type="radio" name="" id="inputRadio1">
+                        <label for="inputRadio1">Input Radio 1 </label>
+                        <input type="radio" name="" id="inputRadio2">
+                        <label for="inputRadio2">Input Radio 2</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="" id="inputCheckbox">
+                        <label for="inputCheckbox">Input checkbox</label>
+                        <input type="checkbox" name="" id="inputCheckbox1">
+                        <label for="inputCheckbox1">Input checkbox 1 </label>
+                        <input type="checkbox" name="" id="inputCheckbox2">
+                        <label for="inputCheckbox2">Input checkbox 2</label>
+                    </p>
+        
+                    <input type="button" value="Button">
+                </div>
+            </form>
+            <label for="Ancora" class="btn"> Âncora</label>
+            <input type="checkbox" id="Ancora" class="checkbox_tudo">
+            <div id="ancora">
+                <p>
+                   A tag <\a\> em HTML é usada para criar hiperlinks, também conhecidos como âncoras.
+                </p>
+                <li><b>target:</b> Especifica o destino para onde a resposta do servidor deve ser exibida após a submissão do formulário (pode ser usada na tag de link). Pode ser 
+                    <span title="abre em outra guia" style="color:palevioletred;">"_blank"</span>, 
+                    <span title="abre na mesma guia" style="color:palevioletred;">"_self"</span> , 
+                    <span title="Abre o link ou formulário na janela pai daquela de onde foi aberto. Útil quando você está trabalhando com frames." style="color:palevioletred;">"_parent"</span> ou
+                    <span title="mesmo que parent" style="color:palevioletred;">"_top"</span>.
+                </li>
+                <p>
+                    <b>Navegação interna</b> <br>
+                    Para navegação interna em uma página, você pode usar identificadores de fragmento como href="#secao2". Isso leva o usuário à seção com o id correspondente.
+                    <input type="text" class="codigo" value="<a href='#header'>Ir para o cabecalho</a>" readonly> <br>
+                    <a href='#mago'>Ir para o cabecalho</a>
+                </p>
+            </div>
+
+            <label for="Tabela" class="btn"> Tabela</label>
+            <input type="checkbox" id="Tabela" class="checkbox_tudo">
+            <div id="tabela">
+
+            </div>
+        </section>
+      
+
+        
+        <p title="paragrafo">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, nobis? Autem beatae esse in! Et voluptatem enim autem ratione blanditiis vero suscipit officia, sit nam, dolorem aut possimus delectus totam? Nisi commodi perspiciatis dolorum quasi! Autem porro sit eaque, aut deserunt nam quasi repellat quae quis consequuntur deleniti rem quam expedita iste, doloremque sequi id dolores voluptate nesciunt labore excepturi nihil provident sapiente. Fuga, expedita, veniam soluta sunt, quod quasi temporibus odio quidem sint ducimus dolor nihil voluptates earum cupiditate!
+        </p>
+        <p>Este é um balablabla normal com <span title="usado para agrupar textos sem afetar a semantica - display inline" style="color: red;">um texto em vermelho</span>.</p>
+
+    </main>
+    <footer title="rodapé">
+        rodapé
+    </footer>
+</body>
+</html>
